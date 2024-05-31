@@ -1,0 +1,16 @@
+@baseUrl = http://localhost:8080
+
+# actuator health check
+GET {{baseUrl}}/actuator/health
+
+###
+
+# actuator kubernetes readiness check
+GET {{baseUrl}}/actuator/health/readiness
+
+###
+
+# actuator kubernetes liveness check
+GET {{baseUrl}}/actuator/health/liveness
+
+###
